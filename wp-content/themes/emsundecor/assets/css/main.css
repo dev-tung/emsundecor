@@ -1193,10 +1193,17 @@ html:not(.emsun-menu-js) .menu-item--product-categories:focus-within .product-ca
 	font-weight: 400 !important;
 }
 
-.inquiry-consent input {
-	width: auto;
-	min-height: auto;
-	margin: 0 6px 0 0;
+.inquiry-consent span {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.inquiry-consent input[type="checkbox"] {
+	flex: none;
+	width: 16px;
+	height: 16px;
+	margin: 3px 0 0;
 }
 
 .woocommerce-error {
@@ -1251,7 +1258,7 @@ html:not(.emsun-menu-js) .menu-item--product-categories:focus-within .product-ca
 	font-weight: 700;
 }
 
-.inquiry-form input,
+.inquiry-form input:not([type="checkbox"]),
 .inquiry-form textarea,
 .inquiry-form select {
 	width: 100%;
